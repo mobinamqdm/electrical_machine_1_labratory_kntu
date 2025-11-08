@@ -43,11 +43,11 @@ The models demonstrate the trade-off between **simplicity and precision**:
 - **Dual-loop** architecture (current inner + speed outer) delivers **better current limiting**, **stronger disturbance rejection**, and **overall stability**, ideal when motor protection matters.  
 - **Single-loop** is **simpler** and faster to settle, but allows **large current spikes** and shows weaker disturbance handling.  
 - Comparative plots and scripts are provided in:  
-  - MATLAB: [`results-analysis-comparasion.m`](MATLAB-code/results-analysis-comparasion.m)  
-  - Simulink: [`DC-dual-loop_single-loop_comparasion.slx`](simulink/DC-dual-loop_single-loop_comparasion.slx)
+  - MATLAB: [`results-analysis-comparasion.m`](electrical-machine-1-lab-project/MATLAB-code/results-analysis-comparasion.m)  
+  - Simulink: [`DC-dual-loop-single-loop-comparasion.slx`](electrical-machine-1-lab-project/simulink/DC-dual-loop-sinlge-loop-comparasion.slx)
 
 > For full derivations, figures, and experiment details, see the report:  
-> 📄 [`DC-motor-single-and-dual-controller-simulation-report.pdf`](report/DC-motor-single-and-dual-controller-simulation-report.pdf)
+> 📄 [`DC-motor-single-and-dual-controller-simulation-report.pdf`](electrical-machine-1-lab-project/report/DC-motor-single-and-dual-controller-simulation-report.pdf)
 
 ---
 
@@ -77,22 +77,22 @@ electrical-machine-1-lab-project/
 ### MATLAB Codes
 | File | What it does |
 |------|--------------|
-| [results-analysis-comparasion.m](MATLAB-code/results-analysis-comparasion.m) | Side-by-side plots and metrics comparing **single** vs **dual** loop |
-| [results-analysis-dual-loop-current-loop.m](MATLAB-code/results-analysis-dual-loop-current-loop.m) | Inner **current loop** analysis (overshoot/limits) |
-| [results-analysis-dual-loop.m](MATLAB-code/results-analysis-dual-loop.m) | Dual-loop **speed/torque/current** evaluation |
-| [results-analysis-single-loop.m](MATLAB-code/results-analysis-single-loop.m) | Single-loop performance (speed, torque, current) |
+| [results-analysis-comparasion.m](electrical-machine-1-lab-project/MATLAB-code/results-analysis-comparasion.m) | Side-by-side plots and metrics comparing **single** vs **dual** loop |
+| [results-analysis-dual-loop-current-loop.m](electrical-machine-1-lab-project/MATLAB-code/results-analysis-dual-loop-current-loop.m) | Inner **current loop** analysis (overshoot/limits) |
+| [results-analysis-dual-loop.m](electrical-machine-1-lab-project/MATLAB-code/results-analysis-dual-loop.m) | Dual-loop **speed/torque/current** evaluation |
+| [results-analysis-single-loop.m](electrical-machine-1-lab-project/MATLAB-code/results-analysis-single-loop.m) | Single-loop performance (speed, torque, current) |
 
 ### Simulink Models
 | Model | Description |
 |------|-------------|
-| [DC-dual-loop.slx](simulink/DC-dual-loop.slx) | Dual-loop (speed outer, current inner) |
-| [DC-dual-loop_single-loop_comparasion.slx](simulink/DC-dual-loop_single-loop_comparasion.slx) | Combined model to compare **single** vs **dual** loop |
-| [DC-motor_single_loop.slx](simulink/DC-motor_single_loop.slx) | Single-loop speed control |
+| [DC-dual-loop.slx](electrical-machine-1-lab-project/simulink/DC-dual-loop.slx) | Dual-loop (speed outer, current inner) |
+| [DC-dual-loop_single-loop_comparasion.slx](electrical-machine-1-lab-project/simulink/DC-dual-loop_sinlge-loop_comparasion.slx) | Combined model to compare **single** vs **dual** loop |
+| [DC-motor-single-loop.slx](electrical-machine-1-lab-project/simulink/DC-motor-single-loop.slx) | Single-loop speed control |
 
 ### Reports & Paper
 | File | Description |
 |------|-------------|
-| [DC-motor-single-and-dual-controller-simulation-report.pdf](report/DC-motor-single-and-dual-controller-simulation-report.pdf) | Full project report, figures, and methods |
-| [drive-and-control-of-DC-motor-and-its-simulation.pdf](paper/drive-and-control-of-DC-motor-and-its-simulation.pdf) | Reference paper used in the study |
+| [DC-motor-single-and-dual-controller-simulation-report.pdf](electrical-machine-1-lab-project/report/DC-motor-single-and-dual-controller-simulation-report.pdf) | Full project report, figures, and methods |
+| [drive-and-control-of-DC-motor-and-its-simulation.pdf](electrical-machine-1-lab-project/paper/drive-and-control-of-DC-motor-and-its-simulation.pdf) | Reference paper used in the study |
 
 
